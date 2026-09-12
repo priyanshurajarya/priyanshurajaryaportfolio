@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- ============================================================
+     EDIT ME: Page title & meta description
+     ============================================================ -->
+<title>Priyanshu Raj Arya — Portfolio</title>
+<meta name="description" content="Priyanshu Raj Arya — B.Tech CSE student at NCE Chandi, interested in cloud computing." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======================= TOP BAR ======================= -->
+  <div class="titlebar">
+    <span class="dot"></span>
+    <span class="titlebar-text">portfolio.js — Priyanshu Raj Arya</span>
+  </div>
+
+  <!-- ======================= NAV (editor tabs) ======================= -->
+  <header class="tabbar" role="tablist" aria-label="Portfolio sections">
+    <button class="tab active" data-target="summary" role="tab" aria-selected="true">
+      <span class="tab-icon">◆</span>summary.md
+    </button>
+    <button class="tab" data-target="skills" role="tab" aria-selected="false">
+      <span class="tab-icon">◆</span>skills.json
+    </button>
+    <button class="tab" data-target="projects" role="tab" aria-selected="false">
+      <span class="tab-icon">◆</span>projects/
+    </button>
+  </header>
+
+  <main class="workspace">
+
+    <!-- ======================= SUMMARY TAB ======================= -->
+    <section id="summary" class="pane active">
+      <p class="prompt">$ whoami</p>
+
+      <!-- ====== EDIT ME: name, role tagline ====== -->
+      <h1 class="hero-name" id="typewriter">Priyanshu Raj Arya</h1>
+      <p class="role-line">B.Tech CSE student · NCE Chandi, Bihar</p>
+
+      <!-- ====== EDIT ME: your bio paragraph ====== -->
+      <p class="bio">
+        I'm a Computer Science Engineering student building a foundation across data structures,
+        systems, and the web. Lately I've been going deep on <strong>cloud computing</strong> —
+        how large systems are deployed, scaled, and kept running — and I like turning that
+        curiosity into small working projects rather than just reading about it. I pick up new
+        tools quickly, which usually means the fastest way for me to learn something is to just
+        start building it.
+      </p>
+
+      <p class="prompt">$ cat facts.txt</p>
+      <div class="facts-grid">
+        <!-- ====== EDIT ME: quick facts ====== -->
+        <div class="fact">
+          <span class="fact-key">education</span>
+          <span class="fact-val">B.Tech, Computer Science Engineering</span>
+        </div>
+        <div class="fact">
+          <span class="fact-key">college</span>
+          <span class="fact-val">NCE Chandi</span>
+        </div>
+        <div class="fact">
+          <span class="fact-key">location</span>
+          <span class="fact-val">Bihar, India</span>
+        </div>
+        <div class="fact">
+          <span class="fact-key">focus</span>
+          <span class="fact-val">Cloud Computing</span>
+        </div>
+      </div>
+
+      <!-- ====== EDIT ME: resume link, or remove this block ====== -->
+      <a class="resume-link" href="#" target="_blank" rel="noopener">↳ view resume (PDF)</a>
+    </section>
+
+    <!-- ======================= SKILLS TAB ======================= -->
+    <section id="skills" class="pane">
+      <p class="prompt">$ cat skills.json</p>
+
+      <!-- ====== EDIT ME: skill groups + proficiency % (edit the style="width:__%" on .bar-fill) ====== -->
+      <div class="skill-group">
+        <p class="group-key">"languages"</p>
+        <ul class="skill-list">
+          <li class="skill">
+            <span class="skill-name">C++</span>
+            <span class="bar"><span class="bar-fill" style="width:75%"></span></span>
+            <span class="skill-pct">75%</span>
+          </li>
+          <li class="skill">
+            <span class="skill-name">Python</span>
+            <span class="bar"><span class="bar-fill" style="width:70%"></span></span>
+            <span class="skill-pct">70%</span>
+          </li>
+          <li class="skill">
+            <span class="skill-name">JavaScript</span>
+            <span class="bar"><span class="bar-fill" style="width:65%"></span></span>
+            <span class="skill-pct">65%</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <p class="group-key">"cloud_and_devops"</p>
+        <ul class="skill-list">
+          <li class="skill">
+            <span class="skill-name">AWS (EC2, S3)</span>
+            <span class="bar"><span class="bar-fill" style="width:55%"></span></span>
+            <span class="skill-pct">55%</span>
+          </li>
+          <li class="skill">
+            <span class="skill-name">Linux / Shell</span>
+            <span class="bar"><span class="bar-fill" style="width:60%"></span></span>
+            <span class="skill-pct">60%</span>
+          </li>
+          <li class="skill">
+            <span class="skill-name">Git &amp; GitHub</span>
+            <span class="bar"><span class="bar-fill" style="width:70%"></span></span>
+            <span class="skill-pct">70%</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <p class="group-key">"cs_fundamentals"</p>
+        <ul class="skill-list">
+          <li class="skill">
+            <span class="skill-name">Data Structures &amp; Algorithms</span>
+            <span class="bar"><span class="bar-fill" style="width:65%"></span></span>
+            <span class="skill-pct">65%</span>
+          </li>
+          <li class="skill">
+            <span class="skill-name">DBMS</span>
+            <span class="bar"><span class="bar-fill" style="width:60%"></span></span>
+            <span class="skill-pct">60%</span>
+          </li>
+          <li class="skill">
+            <span class="skill-name">Operating Systems</span>
+            <span class="bar"><span class="bar-fill" style="width:55%"></span></span>
+            <span class="skill-pct">55%</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= PROJECTS TAB ======================= -->
+    <section id="projects" class="pane">
+      <p class="prompt">$ ls projects/</p>
+
+      <!-- ====== EDIT ME: fill in the real details + links for each project below.
+           Duplicate the whole <article class="project"> block if you add a third. ====== -->
+      <article class="project">
+        <p class="project-header">$ open college-website</p>
+        <h3 class="project-title">College Website</h3>
+        <p class="project-desc">
+          Designed and built a website for my college — covering pages like
+          course info, notices, and student resources. Replace this line with
+          specifics: what pages it has, who it's for, and anything tricky you
+          solved (navigation, responsiveness, forms, etc.).
+        </p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">View code</a>
+          <a href="#" target="_blank" rel="noopener">Live demo</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <p class="project-header">$ open ai-built-website</p>
+        <h3 class="project-title">Website Built with AI Tools</h3>
+        <p class="project-desc">
+          Built a website using AI-assisted tools to speed up design and
+          development. Replace this line with what the site is for, which AI
+          tool(s) you used, and what you had to figure out or fix yourself.
+        </p>
+        <div class="tags">
+          <span class="tag">AI-assisted</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noopener">View code</a>
+          <a href="#" target="_blank" rel="noopener">Live demo</a>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER / CONTACT ======================= -->
+  <footer class="footer">
+    <p class="prompt">$ contact --me</p>
+    <!-- ====== EDIT ME: your real email / github / linkedin ====== -->
+    <div class="contact-links">
+      <a href="mailto:youremail@example.com">youremail@example.com</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin.com/in/yourusername</a>
+    </div>
+    <p class="footer-note">Based in Bihar, India · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
